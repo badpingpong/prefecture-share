@@ -23,11 +23,14 @@ yarn dev
 ## ディレクトリ構成・設計
 
 実際に開発する際のソースコードは src ディレクトリの中に入っています。src の中はクリーンアーキテクチャを元に構成しています。
-domain - モデルや repository の定義
-infrastructure - 外部 API 等とのデータのやり取りを担う
-application - ビジネスロジックを記載する
-pages - Next.js で扱われる pages がここ
-presentation - pages 以外の表示に関わる部分
+
+| ディレクトリ   | 説明                                  |
+| -------------- | ------------------------------------- |
+| domain         | モデルや repository の定義            |
+| infrastructure | 外部 API 等とのデータのやり取りを担う |
+| application    | ビジネスロジックを記載する            |
+| pages          | Next.js で扱われる pages がここ       |
+| presentation   | pages 以外の表示に関わる部分          |
 
 ## 主な利用技術
 
