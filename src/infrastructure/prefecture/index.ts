@@ -1,2 +1,2 @@
-export type { PrefectureDriver } from "./type";
+export type { IPrefectureDriver } from "./type";
 export { PrefectureMockDriver } from "./PrefectureMockDriver";

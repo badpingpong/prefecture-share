@@ -1,6 +1,6 @@
 import { PrefecturesResponse } from "@domain/models";
 
-export interface PrefectureDriver {
+export interface IPrefectureDriver {
   /**
    * @return {PrefecturesResponse} - 都道府県一覧を含むレスポンス
    */

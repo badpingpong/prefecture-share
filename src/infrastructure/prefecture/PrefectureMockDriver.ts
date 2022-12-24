@@ -1,7 +1,7 @@
 import { PrefecturesResponse } from "@domain/models";
-import { PrefectureDriver } from "./type";
+import { IPrefectureDriver } from "./type";
 
-export class PrefectureMockDriver implements PrefectureDriver {
+export class PrefectureMockDriver implements IPrefectureDriver {
   fetchAll(): Promise<PrefecturesResponse> {
     return new Promise((resolve) =>
       setTimeout(() => {
