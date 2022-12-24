@@ -7,8 +7,10 @@ export type Prefecture = {
 // 都道府県一覧のレスポンスの型
 export type PrefecturesResponse = {
   message: string | null;
-  result: Array<{
-    prefCode: number;
-    prefName: string;
-  }>;
+  result: Array<PrefectureResponse>;
+};
+
+export type PrefectureResponse = {
+  prefCode: number;
+  prefName: string;
 };
