@@ -1,0 +1,1 @@
+export { usePrefectureList } from "./usePrefectureList";
