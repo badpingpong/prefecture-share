@@ -2,6 +2,7 @@ import * as U from "@application/usecase";
 import * as R from "@domain/repository";
 import * as D from "@infrastructure/index";
 
+// ここでDIを行う
 class CompositionRoot {
   static resolve(): CompositionRoot {
     return new CompositionRoot();
