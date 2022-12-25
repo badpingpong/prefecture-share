@@ -1,8 +1,8 @@
-import { PrefecturesResponse } from "@domain/models";
+import { PrefectureListResponse } from "@domain/models";
 import { IPrefectureDriver } from "./type";
 
 export class PrefectureMockDriver implements IPrefectureDriver {
-  fetchAll(): Promise<PrefecturesResponse> {
+  fetchAll(): Promise<PrefectureListResponse> {
     return new Promise((resolve) =>
       setTimeout(() => {
         resolve(mockPrefectures);
@@ -11,7 +11,7 @@ export class PrefectureMockDriver implements IPrefectureDriver {
   }
 }
 
-const mockPrefectures: PrefecturesResponse = {
+const mockPrefectures: PrefectureListResponse = {
   message: null,
   result: [
     {

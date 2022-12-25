@@ -5,7 +5,7 @@ export type Prefecture = {
 };
 
 // 都道府県一覧のレスポンスの型
-export type PrefecturesResponse = {
+export type PrefectureListResponse = {
   message: string | null;
   result: Array<PrefectureResponse>;
 };

@@ -1,4 +1,4 @@
-import { Prefecture, PrefecturesResponse } from "@domain/models";
+import { Prefecture, PrefectureListResponse } from "@domain/models";
 import { PrefectureResponse } from "@domain/models/prefecture";
 
 export interface IPrefectureRepository {
@@ -6,6 +6,6 @@ export interface IPrefectureRepository {
 }
 
 export interface IPrefectureTranslator {
-  translatePrefectures(res: PrefecturesResponse): Prefecture[];
+  translatePrefectureList(res: PrefectureListResponse): Prefecture[];
   translatePrefecture(res: PrefectureResponse): Prefecture;
 }

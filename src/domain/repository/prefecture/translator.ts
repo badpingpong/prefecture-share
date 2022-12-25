@@ -1,7 +1,7 @@
 import { Prefecture } from "@domain/models";
 import {
   PrefectureResponse,
-  PrefecturesResponse,
+  PrefectureListResponse,
 } from "@domain/models/prefecture";
 import { IPrefectureTranslator } from "./type";
 
@@ -10,7 +10,7 @@ export class PrefectureTranslator implements IPrefectureTranslator {
     return { id: res.prefCode, name: res.prefName };
   }
 
-  translatePrefectures(res: PrefecturesResponse): Prefecture[] {
+  translatePrefectureList(res: PrefectureListResponse): Prefecture[] {
     return res.result.map((prefectureRes) =>
       this.translatePrefecture(prefectureRes)
     );

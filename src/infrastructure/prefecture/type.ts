@@ -1,8 +1,8 @@
-import { PrefecturesResponse } from "@domain/models";
+import { PrefectureListResponse } from "@domain/models";
 
 export interface IPrefectureDriver {
   /**
-   * @return {PrefecturesResponse} - 都道府県一覧を含むレスポンス
+   * @return {PrefectureListResponse} - 都道府県一覧を含むレスポンス
    */
-  fetchAll(): Promise<PrefecturesResponse>;
+  fetchAll(): Promise<PrefectureListResponse>;
 }

@@ -10,6 +10,6 @@ export class PrefectureRepository implements IPrefectureRepository {
 
   async readAll(): Promise<Prefecture[]> {
     const res = await this.driver.fetchAll();
-    return this.translator.translatePrefectures(res);
+    return this.translator.translatePrefectureList(res);
   }
 }

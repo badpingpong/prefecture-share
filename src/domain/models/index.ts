@@ -1,1 +1,1 @@
-export type { Prefecture, PrefecturesResponse } from "./prefecture";
+export type { Prefecture, PrefectureListResponse } from "./prefecture";
