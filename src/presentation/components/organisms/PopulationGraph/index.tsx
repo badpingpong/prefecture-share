@@ -11,17 +11,10 @@ import {
 import { useContext } from "react";
 import * as S from "./styles";
 
-// お試し
-const options = {
-  title: {
-    text: "My chart",
-  },
-  series: [
-    {
-      data: [1, 2, 3],
-    },
-  ],
-};
+// Next.js用の設定 https://github.com/highcharts/highcharts-react#highcharts-with-nextjs
+if (typeof Highcharts === "object") {
+  HighchartsExporting(Highcharts);
+}
 
 export const PopulationGraph = () => {
   const { selectedPrefectures } = useContext(PrefecturesContext);
