@@ -13,7 +13,7 @@ export const usePopulationDataForGraph = (
         return {
           type: "line",
           name: pref.name,
-          data: population?.data.map((item) => [item.year, item.value]) ?? [],
+          data: population?.data?.map((item) => [item.year, item.value]) ?? [],
         };
       }),
     [prefectures, populations]
