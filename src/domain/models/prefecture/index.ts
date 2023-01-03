@@ -28,3 +28,12 @@ export type PrefecturePopulationsResponse = {
     }[];
   };
 };
+
+export type PrefecturePopulation = {
+  id: number;
+  data: {
+    year: number;
+    value: number;
+  }[];
+  prefName: string;
+};
